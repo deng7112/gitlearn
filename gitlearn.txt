@@ -13,4 +13,17 @@ git reset HEAD '文件名'		把暂存区的修改撤销，重新回到工作区
 rm '文件名'	删除一个文件之后有两个选择
 	1。彻底删除	git rm         git commit -m '备注'
 	2。恢复		git checkout -- '文件名'	其实就是用版本库的文件替代工作区文件
+ssh-keygen -t rsa -C "邮箱地址"		创建sshkey
+.ssh目录，里面有id_rsa和id_rsa.pub两个文件，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥
+git remote add origin "仓库地址"     关联一个远程仓库
+git push -u origin master            第一次推送master分支的所有内容
+git push origin master		     之后可以直接这样推送最新版本
+git clone "仓库地址"		     克隆一个远程仓库到本地
+
+git checkout -b "分支名"	     创建并切换一个分支	
+=    git branch "分支名"  +  git checkout "分支名"
+
+git branch		查看当前分支		-d   删除某分支
+git checkout "分支名"	切换到‘’分支
+git merge "分支名"	合并某分支到当前分支
 
