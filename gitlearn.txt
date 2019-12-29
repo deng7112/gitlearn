@@ -1,0 +1,16 @@
+HEAD表示最新版本
+git init 		初始化当前目录为一个仓库
+git add ‘文件名’    	添加
+git status              查看情况（以添加未提交的队列）
+git diff HEAD -- '文件名'  		查看变动了什么
+git commit -m '备注信息'	提交到仓库
+git log --pretty==oneline	一条线显示历史版本
+git reset --hard HEAD^		回到上一个版本
+git reset --hard '版本号前面几位'	回到某一个版本
+git reflog 		 前面的命令记录
+git checkout -- '文件名'	把工作区的修改撤销，
+git reset HEAD '文件名'		把暂存区的修改撤销，重新回到工作区
+rm '文件名'	删除一个文件之后有两个选择
+	1。彻底删除	git rm         git commit -m '备注'
+	2。恢复		git checkout -- '文件名'	其实就是用版本库的文件替代工作区文件
+
