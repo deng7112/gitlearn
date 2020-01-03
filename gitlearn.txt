@@ -59,9 +59,10 @@ git push origin --tags 			 推送所有标签到远程
 git tag -d v0.9
 然后，从远程删除。删除命令也是push，但是格式如下：
 git push origin :refs/tags/v0.9
-
-
-
-
+--------------
+远程库操作，添加码云仓库gitee.com
+git remote rm origin 			 删除和远程仓库origin的关联
+git remote add <name> <链接>		 添加一个<链接>仓库<name>
+git config --global color.ui true	 为git添加颜色
 
 
