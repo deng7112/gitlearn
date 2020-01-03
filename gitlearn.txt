@@ -22,8 +22,10 @@ git clone "仓库地址"		     克隆一个远程仓库到本地
 
 git checkout -b "分支名"	     创建并切换一个分支	
 =    git branch "分支名"  +  git checkout "分支名"
+git switch -c "分支名"		     创建并切换一个分支
+=    git branch "分支名"  +  git switch "分支名"
 
 git branch		查看当前分支		-d   删除某分支
 git checkout "分支名"	切换到‘’分支
 git merge "分支名"	合并某分支到当前分支
-
+git log --geaph --pretty=oneline     查看分支合并图
