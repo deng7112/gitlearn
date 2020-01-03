@@ -29,3 +29,5 @@ git branch		查看当前分支		-d   删除某分支
 git checkout "分支名"	切换到‘’分支
 git merge "分支名"	合并某分支到当前分支
 git log --geaph --pretty=oneline     查看分支合并图
+git stash		把当前工作区储藏起来
+
