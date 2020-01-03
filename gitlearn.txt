@@ -30,7 +30,20 @@ git checkout "分支名"	切换到‘’分支
 git merge "分支名"	合并某分支到当前分支
 git log --graph --pretty=oneline     查看分支合并图
 git stash		把当前工作区储藏起来
-	list   列出储藏内容的列表
-	apply  恢复储藏内容             drop   删除储藏
-	pop    恢复并删除储藏内容
-	
+	list		列出储藏内容的列表
+	apply 		恢复储藏内容             drop   删除储藏
+	pop 				 恢复并删除储藏内容
+git remote				 查看远程库信息
+git remote -v 				 查看远程库地址
+git clone '地址'  			 克隆/下载
+git checkout -b dev origin/dev     	 创建远程库的dev分支
+
+
+ 查看远程库信息，使用git remote -v；
+ 本地新建的分支如果不推送到远程，对其他人就是不可见的；
+ 从本地推送分支，使用git push origin branch-name，如果推送失败，先用git pull抓取远程的新提交；
+ 在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name，本地和远程分支的名称最好一致；
+ 建立本地分支和远程分支的关联，使用git branch --set-upstream branch-name origin/branch-name；
+ 从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。
+
+git log --graph --pretty=oneline --abbrev-commit	简洁地显示分支合并图
