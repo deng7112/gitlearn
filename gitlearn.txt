@@ -28,6 +28,9 @@ git switch -c "分支名"		     创建并切换一个分支
 git branch		查看当前分支		-d   删除某分支
 git checkout "分支名"	切换到‘’分支
 git merge "分支名"	合并某分支到当前分支
-git log --geaph --pretty=oneline     查看分支合并图
+git log --graph --pretty=oneline     查看分支合并图
 git stash		把当前工作区储藏起来
-
+	list   列出储藏内容的列表
+	apply  恢复储藏内容             drop   删除储藏
+	pop    恢复并删除储藏内容
+	
