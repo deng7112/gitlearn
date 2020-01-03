@@ -47,3 +47,21 @@ git checkout -b dev origin/dev     	 创建远程库的dev分支
  从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。
 
 git log --graph --pretty=oneline --abbrev-commit	简洁地显示分支合并图
+git tag <name>				 为当前commit打标签
+git tag					 查看标签
+git <name> <commit>			 给某个提交版本打标签
+git show <v1.0>				 查看标签信息
+git tag -a <name> -m "说明" <commit>     创建带有说明的标签，-a代表标签，-m代表说明
+git tag -d <name>			 删除某个标签
+git push origin <name>			 推送某个标签到远程
+git push origin --tags 			 推送所有标签到远程
+如果标签已经推送到远程，要删除远程标签就麻烦一点，先从本地删除：
+git tag -d v0.9
+然后，从远程删除。删除命令也是push，但是格式如下：
+git push origin :refs/tags/v0.9
+
+
+
+
+
+
