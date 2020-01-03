@@ -64,5 +64,7 @@ git push origin :refs/tags/v0.9
 git remote rm origin 			 删除和远程仓库origin的关联
 git remote add <name> <链接>		 添加一个<链接>仓库<name>
 git config --global color.ui true	 为git添加颜色
+touch .gitignore			 把要忽略的文件名字放进这个文件就可以实现忽略了
+
 
 
